@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const user ={
+  name: "Jessica Fraser",
+  bio: "I am a senior at the University of South Florida, after transfering from Hillsborough Community College with an AA. I am an applied math major with a concentration in data analytics and business intelligence. I am also getting a BAIS certificate as my minor.",
+  contact: "jfraser4@usf.edu"
 }
 
-export default App;
+export default function Profile() {
+  return(
+    <>
+    <h1>{user.name}</h1>
+    <h3>Biography:</h3>
+    <p>{user.bio}</p>
+    <h3>Email:</h3>
+    <p>{user.contact}</p>
+    </>
+  )
+}
