@@ -2,7 +2,7 @@
 export default function SkillList({skill, proficiency}) {
     return (
         <div className="skill-list">
-            <p>{skill} - {proficiency}</p>
+            <p>{skill} - proficiency: {proficiency}</p>
         </div>
     )
 }
