@@ -24,23 +24,31 @@ export default function App() {
   return(
     <>
     {/* Personal information section. */}
+    <section>
     <h1>{user.name}</h1>
     <h3>Biography:</h3>
     <p>{user.bio}</p>
     <h3>Email:</h3>
     <p>{user.contact}</p>
+    </section>
     {/* Skill section. */}
+    <section>
     <h3>Skills:</h3>
     <div className="App">
       <Dashboard skills={skills}/>
     </div>
+    </section>
     {/* Experience section. */}
+    <section>
     <Experience/>
+    </section>
     {/* Education section. */}
+    <section>
     <h3>Education:</h3>
     <p><strong>Hillsborough High School</strong> - high school deploma - 2016-2020</p>
     <p><strong>Hillsborough Community College</strong> - Associate in Arts degree - 2021-2023</p>
     <p><strong>University of South Florida</strong> - 2024-ongoing</p>
+    </section>
     </>
   )
 }
